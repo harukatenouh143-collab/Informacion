@@ -4,380 +4,514 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boletín Informativo - Grupo Scout San Cayetano</title>
+    <title>Grupo Scout San Cayetano N° 26 — Portal Oficial</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <header class="hero">
-        <div class="container">
-            <div class="logo-container">
+    <!-- Header / Navbar Corporativa -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="brand-logo" aria-label="Inicio">
                 <img src="imagen/241108262_567121627757816_149310157439559005_n.jpg" alt="Logo Grupo Scout San Cayetano"
-                    class="brand-logo">
-            </div>
-            <h1 class="main-title">Boletín Informativo del Grupo Scout San Cayetano</h1>
-            <p class="edition-tag">Edición #1 — Agosto 2026</p>
+                    class="logo-img">
+                <div class="brand-text">
+                    <span class="brand-title">San Cayetano N° 26</span>
+                    <span class="brand-sub">Asociación de Scouts de Venezuela</span>
+                </div>
+            </a>
+
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navMenu"
+                aria-label="Abrir menú de navegación">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav id="navMenu" class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#metodologia" class="nav-link">Pilares</a></li>
+                    <li><a href="#unidades" class="nav-link">Unidades</a></li>
+                    <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                    <li><a href="#finanzas" class="nav-link">Finanzas</a></li>
+                    <li><a href="#contacto" class="btn-primary-outline">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <div class="divider"></div>
+    <!-- Hero Section Empresarial -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge-edition">Edición #1 — Agosto 2026</span>
+                <h1 class="main-title">Formando Líderes y Ciudadanos del Mañana</h1>
+                <p class="hero-description">
+                    Educación no formal centrada en valores, liderazgo, autogobierno y compromiso comunitario mediante
+                    el Método Scout en Caracas, Venezuela.
+                </p>
+                <div class="hero-actions">
+                    <a href="#nosotros" class="btn-cta-blue">Conocer Más</a>
+                    <a href="https://www.instagram.com/gruposancayetano" target="_blank" rel="noopener noreferrer"
+                        class="btn-cta-outline">Ver Instagram</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <div class="logo-badge-frame">
+                    <img src="imagen/241108262_567121627757816_149310157439559005_n.jpg" alt="Insignia San Cayetano"
+                        class="brand-logo-hero">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contenido Principal -->
     <main class="container content">
-        <p class="intro-text">
-            Bienvenido a nuestro boletín informativo oficial. Este espacio está diseñado para brindarle una visión clara
-            y actualizada de nuestro trabajo, los valores que nos guían y la gama de iniciativas que ponemos a
-            disposición para el desarrollo integral de la juventud.
-        </p>
 
-        <!-- Sección 1: Quiénes somos -->
-        <section class="card">
-            <h2>Quiénes somos</h2>
-            <p>El Grupo Scout San Cayetano es una entidad civil sin ánimo de lucro dedicada a la educación no
-                formal de los jóvenes, situada en Caracas, Venezuela, y afiliada a la Asociación de Scouts de Venezuela.
-            </p>
-            <p>Fundado oficialmente en 1971, nuestro grupo pertenece al Distrito Sucre Norte y emplea el método scout
-                para fomentar valores, liderazgo y responsabilidad social mediante actividades al aire libre.</p>
-            <p>Nuestra misión principal es empoderar a los jóvenes mediante herramientas educativas y vivenciales que
-                aseguren un crecimiento personal y social sostenible, sustentado en la empatía, el trabajo colaborativo
-                y el compromiso comunitario.</p>
-        </section>
-
-        <!-- Sección 2: Dónde nos ubicamos -->
-        <section class="card">
-            <h2>Dónde nos ubicamos</h2>
-            <p>Nuestra sede principal se encuentra situada en la <strong>Calle Humocaro, Parque Fernando Monguí,
-                    Urbanización Horizonte, El Marqués, Caracas</strong>.</p>
-            <p>Desde nuestras instalaciones coordinamos las actividades semanales, talleres y proyectos comunitarios.
-                Nuestro alcance operativo abarca tanto las actividades locales en la sede como excursiones de campo y
-                proyectos de servicio social en distintas zonas de Caracas.</p>
-        </section>
-
-        <!-- Sección 3: ¿Qué hacemos? -->
-        <section class="card">
-            <h2>¿Qué hacemos?</h2>
-            <p>Nos enfocamos en la educación mediante la acción bajo el lema "aprender haciendo", estructurando nuestras
-                actividades en cuatro áreas fundamentales:</p>
-            <ul class="feature-list">
-                <li><strong>Vida al Aire Libre y Supervivencia:</strong> Campamentos, cocina sin utensilios y
-                    exploración de la naturaleza.</li>
-                <li><strong>Desarrollo del Liderazgo y Autogobierno:</strong> Organización en patrullas donde los
-                    jóvenes eligen sus líderes y toman decisiones democráticas.</li>
-                <li><strong>Servicio a la Comunidad:</strong> Voluntariado, apoyo social y conservación del medio
-                    ambiente.</li>
-                <li><strong>Juegos, Tradiciones y Mística:</strong> Dinámicas y ceremonias para fortalecer valores, la
-                    salud y la cohesión del grupo.</li>
-            </ul>
-        </section>
-
-        <!-- Sección 4: Unidades del Grupo -->
-        <section class="card">
-            <h2>Unidades del Grupo</h2>
-
-            <details class="unit-item">
-                <summary>
-                    <img src="imagen/Rama-Manada-1024x1024.png" alt="Insignia Manada de Lobatos" class="unit-icon">
-                    <span>La Manada de Lobatos y Lobeznas (6 a 11 años)</span>
-                </summary>
-                <p>Socializa a los niños y enseña valores mediante el juego cooperativo basado en "El Libro de la
-                    Selva". Desarrolla la escucha activa, el reconocimiento en el Consejo de la Roca y la exploración de
-                    talentos mediante el programa de Especialidades y excursiones de observación natural.</p>
-            </details>
-
-            <details class="unit-item">
-                <summary>
-                    <img src="imagen/Tropa-1024x1024.png" alt="Insignia Tropa Scout" class="unit-icon">
-                    <span>La Tropa Scout (11 a 16 años)</span>
-                </summary>
-                <p>Promueve la autosuficiencia y el liderazgo en la naturaleza. Los scouts construyen estructuras con
-                    técnicas de pionerismo (puentes, cocinas elevadas), aprenden supervivencia (fuego, purificación de
-                    agua), organizan excursiones de montaña y se capacitan en primeros auxilios.</p>
-            </details>
-
-            <details class="unit-item">
-                <summary>
-                    <img src="imagen/Clan-1024x1024.png" alt="Insignia Clan Rover" class="unit-icon">
-                    <span>El Clan de Rovers (16 a 21 años)</span>
-                </summary>
-                <p>Orientado a la acción social y el voluntariado. Los Rovers gestionan y ejecutan proyectos en
-                    comunidades vulnerables, realizan expediciones de introspección, fortalecen sus habilidades de
-                    liderazgo y diseñan sus planes de vida hacia el futuro profesional.</p>
-            </details>
-        </section>
-
-        <!-- Sección 5: Manuales de Especialidades (37) -->
-        <section class="card specialties-section">
-            <h2>Manuales de Especialidades (37)</h2>
-            <p class="section-subtitle">Selecciona un área para consultar los manuales del programa de progresión
-                aplicables según el nivel de tu unidad (Manada, Tropa y Clan):</p>
-
-            <!-- Área 1: Artes y Hobbies (8) -->
-            <details class="specialty-area">
-                <summary>Artes y Hobbies (8)</summary>
-                <div class="specialty-grid">
-                    <div class="specialty-card">
-                        <h3>Anfitrión y Protocolo</h3>
-                        <a href="Especialidades/Artes y Hobbies - Anfitrión _ Protocolo.pdf" class="btn-pdf"
-                            target="_blank" rel="noopener noreferrer">Ver PDF</a>
+        <!-- Sección Quiénes Somos & Ubicación (Grilla 2 columnas) -->
+        <section id="nosotros" class="grid-2col section-padding">
+            <div class="card corporate-card">
+                <div class="card-header">
+                    <div class="icon-wrapper red">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
                     </div>
-                    <div class="specialty-card">
-                        <h3>Coleccionista</h3>
-                        <a href="Especialidades/Artes y Hobbies - Coleccionista.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Escultor</h3>
-                        <a href="Especialidades/Artes y Hobbies - Escultor.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Filatelia</h3>
-                        <a href="Especialidades/Artes y Hobbies - Filatelia.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Historiador</h3>
-                        <a href="Especialidades/Artes y Hobbies - Historiador.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Literatura y Poesía</h3>
-                        <a href="Especialidades/Artes y Hobbies - Literatura y Poesía.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Música</h3>
-                        <a href="Especialidades/Artes y Hobbies - Música.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Pintor</h3>
-                        <a href="Especialidades/Artes y Hobbies - Pintor.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
+                    <h2>Quiénes Somos</h2>
                 </div>
-            </details>
+                <p>El <strong>Grupo Scout San Cayetano N° 26</strong> es una entidad civil sin ánimo de lucro afiliada a
+                    la <em>Asociación de Scouts de Venezuela</em>, perteneciente al Distrito Sucre Norte.</p>
+                <p>Fundado oficialmente en 1971, nos dedicamos al desarrollo integral de la juventud mediante
+                    herramientas educativas vivenciales sustentadas en la empatía, el trabajo colaborativo y la
+                    responsabilidad social.</p>
+            </div>
 
-            <!-- Área 2: Ciencia y Tecnología (7) -->
-            <details class="specialty-area">
-                <summary>Ciencia y Tecnología (7)</summary>
-                <div class="specialty-grid">
-                    <div class="specialty-card">
-                        <h3>Astronomía</h3>
-                        <a href="Especialidades/Ciencia y Tecnología - Astronomía.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
+            <div class="card corporate-card">
+                <div class="card-header">
+                    <div class="icon-wrapper blue">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
                     </div>
-                    <div class="specialty-card">
-                        <h3>Biología</h3>
-                        <a href="Especialidades/Ciencia y Tecnología - Biología.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Electrónica</h3>
-                        <a href="Especialidades/Ciencia y Tecnología - Electrónica.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Física</h3>
-                        <a href="Especialidades/Ciencia y Tecnología - Física.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Informática</h3>
-                        <a href="Especialidades/Ciencia y Tecnología - Informática.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Matemática</h3>
-                        <a href="Especialidades/Ciencia y Tecnología - Matemática.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Química</h3>
-                        <a href="Especialidades/Ciencia y Tecnología - Química.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
+                    <h2>Dónde nos ubicamos</h2>
                 </div>
-            </details>
-
-            <!-- Área 3: Cultura Física (7) -->
-            <details class="specialty-area">
-                <summary>Cultura Física (7)</summary>
-                <div class="specialty-grid">
-                    <div class="specialty-card">
-                        <h3>Actividades Deportivas</h3>
-                        <a href="Especialidades/Cultura Física - Actividades Deportivas.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Ajedrez</h3>
-                        <a href="Especialidades/Cultura Física - Ajedrez.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Atleta, Fisicoculturismo y Bodyfitness</h3>
-                        <a href="Especialidades/Cultura Física - Atleta, Fisicoculturismo y Bodyfitness.pdf"
-                            class="btn-pdf" target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Defensa Personal</h3>
-                        <a href="Especialidades/Cultura Física - Defensa Personal.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Maniobras con Cuerdas</h3>
-                        <a href="Especialidades/Cultura Física - Maniobras con Cuerdas.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Nadador</h3>
-                        <a href="Especialidades/Cultura Física - Nadador.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Salvavidas</h3>
-                        <a href="Especialidades/Cultura Física - Salvavidas.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Área 4: Habilidad y Destreza (2) -->
-            <details class="specialty-area">
-                <summary>Habilidad y Destreza (2)</summary>
-                <div class="specialty-grid">
-                    <div class="specialty-card">
-                        <h3>Cocinero</h3>
-                        <a href="Especialidades/Habilidad y Destreza - Cocinero.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Reciclaje</h3>
-                        <a href="Especialidades/Habilidad y Destreza - Reciclaje.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Área 5: Identidad Nacional (1) -->
-            <details class="specialty-area">
-                <summary>Identidad Nacional (1)</summary>
-                <div class="specialty-grid">
-                    <div class="specialty-card">
-                        <h3>Defensa Nacional</h3>
-                        <a href="Especialidades/Identidad Nacional - Defensa Nacional.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Área 6: Preparación para el Trabajo (7) -->
-            <details class="specialty-area">
-                <summary>Preparación para el Trabajo (7)</summary>
-                <div class="specialty-grid">
-                    <div class="specialty-card">
-                        <h3>Arquitectura</h3>
-                        <a href="Especialidades/Preparación para el Trabajo - Arquitectura.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Comunicador Social</h3>
-                        <a href="Especialidades/Preparación para el Trabajo - Comunicador Social.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Mecánica Automotriz</h3>
-                        <a href="Especialidades/Preparación para el Trabajo - Mecánica Automotriz.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Odontología</h3>
-                        <a href="Especialidades/Preparación para el Trabajo - Odontólogo.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Recreación</h3>
-                        <a href="Especialidades/Preparación para el Trabajo - Recreación.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Repostería</h3>
-                        <a href="Especialidades/Preparación para el Trabajo - Repostería.pdf" class="btn-pdf"
-                            target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Salud y Producción Animal</h3>
-                        <a href="Especialidades/Preparación para el Trabajo - Salud y Producción Animal.pdf"
-                            class="btn-pdf" target="_blank">Ver PDF</a>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Área 7: Servicio (3) -->
-            <details class="specialty-area">
-                <summary>Servicio (3)</summary>
-                <div class="specialty-grid">
-                    <div class="specialty-card">
-                        <h3>Conservacionismo</h3>
-                        <a href="Especialidades/Servicio - Conservacionismo.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Guía</h3>
-                        <a href="Especialidades/Servicio - Guía.pdf" class="btn-pdf" target="_blank">Ver PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Intérprete</h3>
-                        <a href="Especialidades/Servicio - Intérprete.pdf" class="btn-pdf" target="_blank">Ver PDF</a>
-                    </div>
-                </div>
-            </details>
-
-            <!-- Área 8: Vida al Aire Libre (2) -->
-            <details class="specialty-area">
-                <summary>Vida al Aire Libre (2)</summary>
-                <div class="specialty-grid">
-                    <div class="specialty-card">
-                        <h3>Acampador</h3>
-                        <a href="Especialidades/Vida al Aire Libre - Acampador.pdf" class="btn-pdf" target="_blank">Ver
-                            PDF</a>
-                    </div>
-                    <div class="specialty-card">
-                        <h3>Ofidiología</h3>
-                        <a href="Especialidades/Vida al Aire Libre - Ofidiología.pdf" class="btn-pdf"
-                            target="_blank">Ver
-                            PDF</a>
-                    </div>
-                </div>
-            </details>
-        </section>
-
-        <!-- Sección 6: Información sobre pagos -->
-        <section class="card">
-            <h2>Información sobre pagos</h2>
-            <p>Los aportes financieros para la Asociación de Scouts de Venezuela se dividen en:</p>
-            <ul class="payment-list">
-                <li><strong>Pagos Obligatorios:</strong> Registro Nacional anual (seguro y administración) y Cuota de
-                    Grupo (mantenimiento logístico local).</li>
-                <li><strong>Equipamiento Personal:</strong> Inversión progresiva en uniforme oficial, pañoleta y equipo
-                    de campamento.</li>
-                <li><strong>Pagos Eventuales:</strong> Financiamiento independiente para transporte, comida y derechos
-                    de uso en campamentos o eventos distritales/nacionales.</li>
-            </ul>
-        </section>
-
-        <section class="social-section">
-            <h3 class="social-title">SÍGUENOS EN NUESTRAS REDES</h3>
-            <div class="social-container">
-                <a href="https://www.instagram.com/gruposancayetano?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
-                    target="_blank" rel="noopener noreferrer" class="btn-social btn-instagram">
-                    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                    </svg>
-                    <span>Instagram</span>
-                </a>
+                <p><strong>Sede Principal:</strong> Calle Humocaro, Parque Fernando Monguí, Urbanización Horizonte, El
+                    Marqués, Caracas.</p>
+                <p>Nuestras instalaciones albergan talleres, actividades semanales y planificación logística. Nuestro
+                    alcance operativo abarca actividades locales, excursiones de campo y proyectos de servicio social en
+                    Caracas.</p>
             </div>
         </section>
+
+        <!-- Sección Qué Hacemos / Pilares (4 tarjetas) -->
+        <section id="metodologia" class="section-padding">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">Nuestra Metodología</span>
+                <h2 class="section-main-title">Aprender Haciendo</h2>
+            </div>
+
+            <div class="grid-4col">
+                <div class="feature-card">
+                    <div class="feature-icon red">01</div>
+                    <h3>Vida al Aire Libre</h3>
+                    <p>Campamentos, técnicas de supervivencia, cocina rústica y exploración ambiental.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon blue">02</div>
+                    <h3>Liderazgo Activo</h3>
+                    <p>Sistema de patrullas para promover la toma de decisiones democráticas y autogobierno.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon red">03</div>
+                    <h3>Servicio Social</h3>
+                    <p>Proyectos de impacto comunitario, voluntariado y conservación del medio ambiente.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon blue">04</div>
+                    <h3>Tradición y Mística</h3>
+                    <p>Dinámicas, códigos de honor y ceremonias enfocadas en la salud y la cohesión de grupo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Unidades -->
+        <section id="unidades" class="section-padding">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">Estructura Educativa</span>
+                <h2 class="section-main-title">Unidades del Grupo</h2>
+            </div>
+
+            <div class="accordion-group">
+                <details class="unit-item">
+                    <summary>
+                        <img src="imagen/Rama-Manada-1024x1024.png" alt="Manada" class="unit-icon">
+                        <div class="unit-info">
+                            <span class="unit-title">Manada de Lobatos y Lobeznas</span>
+                            <span class="unit-age">De 6 a 11 años</span>
+                        </div>
+                    </summary>
+                    <div class="unit-content">
+                        <p>Enseña valores mediante el juego cooperativo contextualizado en "El Libro de la Selva".
+                            Desarrolla la escucha activa, el reconocimiento personal y el descubrimiento de talentos
+                            iniciales.</p>
+                    </div>
+                </details>
+
+                <details class="unit-item">
+                    <summary>
+                        <img src="imagen/Tropa-1024x1024.png" alt="Tropa" class="unit-icon">
+                        <div class="unit-info">
+                            <span class="unit-title">Tropa Scout</span>
+                            <span class="unit-age">De 11 a 16 años</span>
+                        </div>
+                    </summary>
+                    <div class="unit-content">
+                        <p>Promueve la autosuficiencia y el trabajo en equipo. Los scouts desarrollan técnicas de
+                            pionerismo, supervivencia, excursiones de montaña y capacitación de primeros auxilios.</p>
+                    </div>
+                </details>
+
+                <details class="unit-item">
+                    <summary>
+                        <img src="imagen/Clan-1024x1024.png" alt="Clan" class="unit-icon">
+                        <div class="unit-info">
+                            <span class="unit-title">Clan de Rovers</span>
+                            <span class="unit-age">De 16 a 21 años</span>
+                        </div>
+                    </summary>
+                    <div class="unit-content">
+                        <p>Enfocado en la acción social y el desarrollo profesional. Los jóvenes diseñan y coordinan
+                            proyectos en comunidades vulnerables, expediciones de alto rendimiento y proyección
+                            comunitaria.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Sección Especialidades (Manuales) -->
+        <section id="especialidades" class="section-padding specialties-section card">
+            <div class="section-title-wrapper">
+                <span class="section-subtitle">Programa de Progresión</span>
+                <h2 class="section-main-title">Manuales de Especialidades (37)</h2>
+                <p class="section-desc">Consulta la documentación técnica por área de conocimiento:</p>
+            </div>
+
+            <div class="specialties-container">
+                <details class="specialty-area">
+                    <summary>
+                        <span>Artes y Hobbies</span>
+                        <span class="count-badge">8 Manuales</span>
+                    </summary>
+                    <div class="specialty-grid">
+                        <div class="specialty-card">
+                            <h3>Anfitrión y Protocolo</h3>
+                            <a href="Especialidades/Artes y Hobbies - Anfitrión _ Protocolo.pdf" class="btn-pdf"
+                                target="_blank" rel="noopener noreferrer">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Coleccionista</h3>
+                            <a href="Especialidades/Artes y Hobbies - Coleccionista.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Escultor</h3>
+                            <a href="Especialidades/Artes y Hobbies - Escultor.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Filatelia</h3>
+                            <a href="Especialidades/Artes y Hobbies - Filatelia.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Historiador</h3>
+                            <a href="Especialidades/Artes y Hobbies - Historiador.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Literatura y Poesía</h3>
+                            <a href="Especialidades/Artes y Hobbies - Literatura y Poesía.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Música</h3>
+                            <a href="Especialidades/Artes y Hobbies - Música.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Pintor</h3>
+                            <a href="Especialidades/Artes y Hobbies - Pintor.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="specialty-area">
+                    <summary>
+                        <span>Ciencia y Tecnología</span>
+                        <span class="count-badge">7 Manuales</span>
+                    </summary>
+                    <div class="specialty-grid">
+                        <div class="specialty-card">
+                            <h3>Astronomía</h3><a href="Especialidades/Ciencia y Tecnología - Astronomía.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Biología</h3><a href="Especialidades/Ciencia y Tecnología - Biología.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Electrónica</h3><a href="Especialidades/Ciencia y Tecnología - Electrónica.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Física</h3><a href="Especialidades/Ciencia y Tecnología - Física.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Informática</h3><a href="Especialidades/Ciencia y Tecnología - Informática.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Matemática</h3><a href="Especialidades/Ciencia y Tecnología - Matemática.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Química</h3><a href="Especialidades/Ciencia y Tecnología - Química.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="specialty-area">
+                    <summary>
+                        <span>Cultura Física</span>
+                        <span class="count-badge">7 Manuales</span>
+                    </summary>
+                    <div class="specialty-grid">
+                        <div class="specialty-card">
+                            <h3>Actividades Deportivas</h3><a
+                                href="Especialidades/Cultura Física - Actividades Deportivas.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Ajedrez</h3><a href="Especialidades/Cultura Física - Ajedrez.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Atleta y Fitness</h3><a
+                                href="Especialidades/Cultura Física - Atleta, Fisicoculturismo y Bodyfitness.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Defensa Personal</h3><a href="Especialidades/Cultura Física - Defensa Personal.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Maniobras con Cuerdas</h3><a
+                                href="Especialidades/Cultura Física - Maniobras con Cuerdas.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Nadador</h3><a href="Especialidades/Cultura Física - Nadador.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Salvavidas</h3><a href="Especialidades/Cultura Física - Salvavidas.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="specialty-area">
+                    <summary>
+                        <span>Habilidad y Destreza</span>
+                        <span class="count-badge">2 Manuales</span>
+                    </summary>
+                    <div class="specialty-grid">
+                        <div class="specialty-card">
+                            <h3>Cocinero</h3><a href="Especialidades/Habilidad y Destreza - Cocinero.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Reciclaje</h3><a href="Especialidades/Habilidad y Destreza - Reciclaje.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="specialty-area">
+                    <summary>
+                        <span>Identidad Nacional</span>
+                        <span class="count-badge">1 Manual</span>
+                    </summary>
+                    <div class="specialty-grid">
+                        <div class="specialty-card">
+                            <h3>Defensa Nacional</h3><a href="Especialidades/Identidad Nacional - Defensa Nacional.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="specialty-area">
+                    <summary>
+                        <span>Preparación para el Trabajo</span>
+                        <span class="count-badge">7 Manuales</span>
+                    </summary>
+                    <div class="specialty-grid">
+                        <div class="specialty-card">
+                            <h3>Arquitectura</h3><a href="Especialidades/Preparación para el Trabajo - Arquitectura.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Comunicador Social</h3><a
+                                href="Especialidades/Preparación para el Trabajo - Comunicador Social.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Mecánica Automotriz</h3><a
+                                href="Especialidades/Preparación para el Trabajo - Mecánica Automotriz.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Odontología</h3><a href="Especialidades/Preparación para el Trabajo - Odontólogo.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Recreación</h3><a href="Especialidades/Preparación para el Trabajo - Recreación.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Repostería</h3><a href="Especialidades/Preparación para el Trabajo - Repostería.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Salud Animal</h3><a
+                                href="Especialidades/Preparación para el Trabajo - Salud y Producción Animal.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="specialty-area">
+                    <summary>
+                        <span>Servicio</span>
+                        <span class="count-badge">3 Manuales</span>
+                    </summary>
+                    <div class="specialty-grid">
+                        <div class="specialty-card">
+                            <h3>Conservacionismo</h3><a href="Especialidades/Servicio - Conservacionismo.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Guía</h3><a href="Especialidades/Servicio - Guía.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Intérprete</h3><a href="Especialidades/Servicio - Intérprete.pdf" class="btn-pdf"
+                                target="_blank">Descargar PDF</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="specialty-area">
+                    <summary>
+                        <span>Vida al Aire Libre</span>
+                        <span class="count-badge">2 Manuales</span>
+                    </summary>
+                    <div class="specialty-grid">
+                        <div class="specialty-card">
+                            <h3>Acampador</h3><a href="Especialidades/Vida al Aire Libre - Acampador.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                        <div class="specialty-card">
+                            <h3>Ofidiología</h3><a href="Especialidades/Vida al Aire Libre - Ofidiología.pdf"
+                                class="btn-pdf" target="_blank">Descargar PDF</a>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Sección Finanzas & Registro -->
+        <section id="finanzas" class="section-padding">
+            <div class="card corporate-card border-blue-top">
+                <h2>Transparencia Financiera</h2>
+                <p>Aportes requeridos para garantizar las actividades institucionales:</p>
+                <ul class="corporate-list">
+                    <li><strong>Pagos Obligatorios:</strong> Registro Nacional Anual (cobertura de seguro y
+                        administración) y Cuota de Grupo para mantenimiento logístico.</li>
+                    <li><strong>Equipamiento Personal:</strong> Inversión progresiva en uniforme oficial, pañoleta e
+                        indumentaria de campamento.</li>
+                    <li><strong>Eventos Especiales:</strong> Logística para transporte, alimentación y derechos de uso
+                        en campamentos distritales/nacionales.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Banner CTA Final / Contacto -->
+        <section id="contacto" class="cta-banner">
+            <div class="cta-content">
+                <h2>¿Deseas conocer más sobre nuestras actividades?</h2>
+                <p>Acércate a nuestra sede en el Parque Fernando Monguí durante nuestras actividades presenciales de los
+                    días sábados o escríbenos directamente en redes sociales.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.instagram.com/gruposancayetano" target="_blank" rel="noopener noreferrer"
+                        class="btn-social-instagram">
+                        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <span>Síguenos en Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Corporativo -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="footer-title">Grupo Scout San Cayetano N° 26</span>
+                <p>Miembro de la Asociación de Scouts de Venezuela | Distrito Sucre Norte.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#metodologia">Pilares</a></li>
+                    <li><a href="#unidades">Unidades</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Ubicación</h4>
+                <p>Calle Humocaro, Parque Fernando Monguí, Urbanización Horizonte, El Marqués, Caracas.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Grupo Scout San Cayetano N° 26. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
