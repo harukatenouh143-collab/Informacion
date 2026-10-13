@@ -195,4 +195,5 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'ArrowRight') showNextImage(1);
         if (e.key === 'ArrowLeft') showNextImage(-1);
     });
+
 });
